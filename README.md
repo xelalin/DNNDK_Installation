@@ -665,7 +665,7 @@ on the Linux PC and search for your ZCU102 SD-Card(in some Ubuntu PCs the sd-car
 
 Burn the img file on the SD-Card with the Linux command:
 
-    sudo dd if=deephi_zc102_dnndk_1.07.img of=/dev/ssd
+    sudo dd if=2018-12-04-zcu102-desktop-stretch.img of=/dev/ssd
 
 (in case of troubles look at https://learn.sparkfun.com/tutorials/sd-cards-and-writing-images)
 Normally it takes about 10-30 min depending on your PC, Once the above process has finished, you can boot the Target board
