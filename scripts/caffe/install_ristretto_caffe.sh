@@ -66,7 +66,7 @@ cd $CAFFE_ROOT
 #cp Makefile.config orig_Makefile.config
 cp ~/DNNDK_Installation/scripts/caffe/Makefile .
 cp ~/DNNDK_Installation/scripts/caffe/Makefile.config .
-cp ~/DNNDK_Installation/scripts/caffe/CMakeLists.txt
+cp ~/DNNDK_Installation/scripts/caffe/CMakeLists.txt .
 #cp ~/scripts/caffe/test_layer_factory.cpp  ./src/caffe/test/test_layer_factory.cpp
 
 export LC_ALL="C"
@@ -91,6 +91,7 @@ source ~/.bashrc
 #########################################################################
 # now test everything
 #########################################################################
+workon $MYVENV
 
 echo $CAFFE_ROOT
 echo $LD_LIBRARY_PATH
