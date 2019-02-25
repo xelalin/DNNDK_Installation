@@ -4,6 +4,13 @@ export CAFFE_ROOT=$HOME/caffe_tools/Ristretto
 export MYVENV=caffe_py27
 
 #########################################################################
+# install all the packges needed by Caffe itself
+# (only once: if you install a second fork of caffe you do not need to install it twice)
+#########################################################################
+#deactivate
+source ~/DNNDK_Installation/scripts/caffe/install_caffe_py27_packages.sh
+
+#########################################################################
 #create python2.7 virtual environment
 #########################################################################
 cd ~
@@ -42,13 +49,6 @@ sudo ln -s /usr/lib/python2.7/dist-packages/cv2.x86_64-linux-gnu.so cv2.so
 cd ~
 
 #########################################################################
-# install all the packges needed by Caffe itself
-# (only once: if you install a second fork of caffe you do not need to install it twice)
-#########################################################################
-deactivate
-source ~/DNNDK_Installation/scripts/caffe/install_caffe_py27_packages.sh
-
-#########################################################################
 # clone Ristretto caffe from github
 #########################################################################
 cd ~
@@ -60,7 +60,7 @@ cd ~
 #########################################################################
 # now compile caffe
 #########################################################################
-workon $MYVENV
+#workon $MYVENV
 cd $CAFFE_ROOT
 #cp Makefile orig_makefile
 #cp Makefile.config orig_Makefile.config
