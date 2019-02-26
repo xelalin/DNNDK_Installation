@@ -41,7 +41,7 @@ workon $MYVENV
 #########################################################################
 
 # install all the packages needed in the virtual env, which are compatible also with Caffe
-sudo pip2 install -r ~/DNNDK_Installation/scripts/caffe/caffe_py27_requirements.txt
+pip2 install -r ~/DNNDK_Installation/scripts/caffe/caffe_py27_requirements.txt
 
 # patch for opencv 2.x
 cd ~/.virtualenvs/$MYVENV/local/lib/python2.7/site-packages/
